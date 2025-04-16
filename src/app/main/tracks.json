@@ -1,0 +1,92 @@
+[
+	{
+		"id": 1,
+		"name": "blowin' in the wind",
+		"artist": "bob dylan",
+		"album": "greatest hits"
+	},
+	{
+		"id": 2,
+		"name": "stairway to heaven",
+		"artist": "led zeppelin",
+		"album": "led zeppelin IV"
+	},
+	{
+		"id": 3,
+		"name": "bohemian rhapsody",
+		"artist": "queen",
+		"album": "a night at the opera"
+	},
+	{
+		"id": 4,
+		"name": "hotel california",
+		"artist": "eagles",
+		"album": "hotel california"
+	},
+	{
+		"id": 5,
+		"name": "imagine",
+		"artist": "john lennon",
+		"album": "imagine"
+	},
+	{
+		"id": 6,
+		"name": "smells like teen spirit",
+		"artist": "nirvana",
+		"album": "nevermind"
+	},
+	{
+		"id": 7,
+		"name": "sweet child o' mine",
+		"artist": "guns n' roses",
+		"album": "appetite for destruction"
+	},
+	{
+		"id": 8,
+		"name": "billie jean",
+		"artist": "michael jackson",
+		"album": "thriller"
+	},
+	{
+		"id": 9,
+		"name": "like a rolling stone",
+		"artist": "bob dylan",
+		"album": "highway 61 revisited"
+	},
+	{
+		"id": 10,
+		"name": "purple haze",
+		"artist": "jimi hendrix",
+		"album": "are you experienced"
+	},
+	{
+		"id": 11,
+		"name": "back in black",
+		"artist": "ac/dc",
+		"album": "back in black"
+	},
+	{
+		"id": 12,
+		"name": "what's going on",
+		"artist": "marvin gaye",
+		"album": "what's going on"
+	},
+	{
+		"id": 13,
+		"name": "superstition",
+		"artist": "stevie wonder",
+		"album": "talking book"
+	},
+	{
+		"id": 14,
+		"name": "(i can't get no) satisfaction",
+		"artist": "(the rolling stones)",
+		"album": "(out of our heads)"
+	},
+	{
+		"id": 15,
+		"name": "(don't fear) the reaper",
+		"artist": "(blue oyster cult)",
+		"album": "(agents of fortune)"
+	}
+]

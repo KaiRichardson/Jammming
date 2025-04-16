@@ -1,34 +1,22 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./search-bar.css";
 
-function SearchBar() {
+export default function SearchBar({ sendSearchTerm }) {
 	const [searchTerm, setSearchTerm] = useState("");
 
-	const handleSearch = (e) => {
-		console.log("Searching for:", e.target.value);
-		e.preventDefault();
-
-		// setSearchTerm(e.target.value);
-
-		// const form = e.target;
-		// const formData = new FormData(form);
-
-		// fetch('/some-api', { method: form.method, body: formData });
-	};
+	function handleClick() {
+		sendSearchTerm(searchTerm);
+	}
 
 	return (
-		<form onSubmit={handleSearch}>
+		<>
 			<h3>Search Bar</h3>
-
 			<input
 				type='text'
-				// onChange={handleSearch}
-				// value={searchTerm}
-				placeholder='Enter A Song'
+				value={searchTerm}
+				onChange={(e) => setSearchTerm(e.target.value)}
 			/>
-			<button type='submit'>Search</button>
-		</form>
+			<button onClick={handleClick}>Send Data to Parent</button>
+		</>
 	);
 }
-
-export default SearchBar;
