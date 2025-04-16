@@ -9,14 +9,13 @@ export default function SearchBar({ sendSearchTerm }) {
 	}
 
 	return (
-		<>
-			<h3>Search Bar</h3>
+		<div className='search-bar-container'>
 			<input
 				type='text'
 				value={searchTerm}
 				onChange={(e) => setSearchTerm(e.target.value)}
 			/>
-			<button onClick={handleClick}>Send Data to Parent</button>
-		</>
+			<button onClick={handleClick}>Search</button>
+		</div>
 	);
 }

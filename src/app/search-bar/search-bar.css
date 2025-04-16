@@ -1,38 +1,43 @@
-.SearchBar {
-	text-align: center;
-}
-
-.SearchBar-logo {
-	height: 40vmin;
-	pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-	.SearchBar-logo {
-		animation: SearchBar-logo-spin infinite 20s linear;
-	}
-}
-
-.SearchBar-header {
-	background-color: #282c34;
-	min-height: 100vh;
+.search-bar-container {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	justify-content: center;
-	font-size: calc(10px + 2vmin);
-	color: white;
+	align-items: center;
+	padding-top: 2em;
 }
 
-.SearchBar-link {
-	color: #61dafb;
+.search-bar-container input {
+	width: 20%;
+	height: 4em;
+	border-radius: 10px;
+	border: 1px solid #00295e;
+	filter: drop-shadow(5px 5px 5px #000);
+	padding-left: 1em;
+	margin-top: 2em;
+	background-color: aliceblue;
 }
 
-@keyframes SearchBar-logo-spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
+.search-bar-container button {
+	width: 10em;
+	height: 2.5em;
+	color: aliceblue;
+	font-size: 15px;
+	background-color: #014195ca;
+	border-radius: 20px;
+	border: 1px solid #014195ca;
+	filter: drop-shadow(5px 5px 5px #000);
+	padding-left: 1em;
+	margin-top: 2em;
+}
+
+.search-bar-container button:hover {
+	cursor: pointer;
+	background-color: #003a85ca;
+	color: rgba(240, 248, 255, 0.745);
+}
+
+.search-bar-container button:active {
+	background-color: #002d67ca;
+	color: rgba(240, 248, 255, 0.745);
+	filter: drop-shadow(2px 2px 2px #000);
 }

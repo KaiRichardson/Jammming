@@ -1,7 +1,9 @@
 import "./search-results.css";
 
-export default function SearchResults({ tracks }) {
-	console.log("tracks:", tracks);
+export default function SearchResults({ tracks, sendSelectedTrack }) {
+	const handleClick = (e) => {
+		sendSelectedTrack(e.target.value);
+	};
 
 	return (
 		<div className='searchResults'>
@@ -16,7 +18,9 @@ export default function SearchResults({ tracks }) {
 									{track.artist} | {track.album}
 								</div>
 							</div>
-							<button className='plus'>+</button>
+							<button className='plus' value={track.id} onClick={handleClick}>
+								+
+							</button>
 						</li>
 					))
 				) : (

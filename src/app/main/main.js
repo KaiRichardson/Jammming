@@ -8,7 +8,16 @@ import "./main.css";
 
 export default function Main() {
 	const [tracks, setTracks] = useState(Tracks);
-	// console.log(tracks);
+
+	const [selectedTrack, setSelectedTrack] = useState(null);
+
+	const handleTrackSelect = (trackId) => {
+		const track = tracks.find((t) => t.id == trackId);
+		setSelectedTrack(track);
+
+		var removeIndex = tracks.indexOf("abc");
+		removeIndex >= 0 && tracks.splice(removeIndex, 1);
+	};
 
 	const [list, setList] = useState([]);
 
@@ -34,7 +43,9 @@ export default function Main() {
 	return (
 		<div className='container'>
 			<div className='header'>
-				<h2>JAMMMING</h2>
+				<h1>
+					JA<span className='m'>MMM</span>ING
+				</h1>
 			</div>
 
 			<div className='search-bar'>
@@ -42,7 +53,7 @@ export default function Main() {
 			</div>
 
 			<div className='search-results'>
-				<SearchResults tracks={tracks} />
+				<SearchResults tracks={tracks} sendSelectedTrack={handleTrackSelect} />
 			</div>
 
 			<div className='playlist'>
